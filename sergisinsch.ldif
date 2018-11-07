@@ -1,0 +1,18 @@
+dn: dc=sergi,dc=cat
+dc: sergi
+description: Arrel de l'examen Sergi
+objectClass: dcObject
+objectClass: organization
+o: sergi.cat
+
+dn: ou=socis,dc=sergi,dc=cat
+ou: socis
+description: socis per una organitzacio associativa ldap
+objectclass: organizationalunit
+
+dn: ou=simpatitzants,dc=sergi,dc=cat
+ou: simpatitzants
+description: simpatitzants per una organitzacio
+objectclass: organizationalunit
+
+

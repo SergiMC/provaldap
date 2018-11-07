@@ -1,0 +1,58 @@
+dn: dc=sergi,dc=cat
+dc: sergi
+description: Arrel de l'examen Sergi
+objectClass: dcObject
+objectClass: organization
+o: sergi.cat
+
+dn: ou=socis,dc=sergi,dc=cat
+ou: socis
+description: socis per una organitzacio associativa ldap
+objectClass: organizationalunit
+
+dn: ou=simpatitzants,dc=sergi,dc=cat
+ou: simpatitzants
+description: simpatitzants per una organitzacio
+objectClass: organizationalunit
+
+dn: idcat=100,ou=socis,dc=sergi,dc=cat
+objectClass: indepeOrgPerson
+cn: 100
+sn: Cano
+idcat: 100
+sardanes: TRUE
+Foto: ///var/tmp/ldapserver:18examen/foto1.jpg
+Lema: Hola bon dia, ningu ho ha demanat pero fa bon dia
+Twitter: www.twitter.com/danicao
+
+dn: idcat=101,ou=socis,dc=sergi,dc=cat
+objectClass: indepeOrgPerson
+cn: 101
+sn: Baena
+idcat: 101
+sardanes: FALSE
+foto: ///var/tmp/ldapserver:18examen/foto1.jpg
+lema: Hola, soc encarregat de que tot funcioni be
+twitter: www.twitter.com/raulbaena
+
+dn: idcat=102,ou=socis,dc=sergi,dc=cat
+objectClass: indepeOrgPerson
+cn: 102
+sn: Munoz
+idcat: 102
+sardanes: TRUE
+foto: ///var/tmp/lapdserver:18examen/foto3.jpg
+lema: Hola, el meu lema es que tot hi vagi be.
+twitter: www.twitter.com/sergimc
+
+
+
+
+
+
+
+
+
+
+
+

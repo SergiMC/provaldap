@@ -1,0 +1,30 @@
+# schema organitzacio:
+#            ldcat,sardanes,foto,lema,soci,twitter
+# @edt ASIX-M06 2018-2019
+
+attributetype (1.1.2.1.4 NAME 'Delictes'
+  DESC 'lema dels socis'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE )
+
+attributetype (1.1.2.1.1 NAME 'anysComdemna' 
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+  SINGLE-VALUE )
+
+attributetype (1.1.2.1.2 NAME 'Galeres'
+  DESC 'sardanes TRUE/FALSE'
+  SYNTAX  1.3.6.1.4.1.1466.115.121.1.7 
+  SINGLE-VALUE )
+
+
+objectclass (1.1.2.2.1 NAME 'llarenaAccount'
+  DESC 'Organitzacio indepe'
+  SUP TOP
+  AUXILIARY
+  MUST Delictes
+  MAY ( anysComdemna $ Galeres) )
+
+
+
